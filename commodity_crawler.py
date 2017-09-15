@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[36]:
-
-
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -21,12 +15,7 @@ class Crawler:
                 print("Your request returns nothing.")
         else:
             print("Cannot connect.")
-    """get list of URL
-    def get_contentURL(self,lst):
-        for url in lst:
-            soup = self.html_parser(url)
-        return soup
-    """
+
 """go to next page if any exists"""         
 def find_next_Page(soup):
     next_pageURL_lst = []
